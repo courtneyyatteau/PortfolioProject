@@ -1,0 +1,456 @@
+:root {
+  --highlight-color: #b93632;
+  --background-color: rgba(241, 95, 95, 0.075);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.homeBody {
+  background-color: var(--background-color);
+}
+
+.sidebar {
+  position: fixed;
+  width: 220px;
+  left: -240px;
+  height: 100%;
+  background: #141212;
+  opacity: 90%;
+  transition: all 0.5s ease;
+}
+.sidebar header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  background: #141212;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+.sidebar a {
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: white;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 5px solid transparent;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.5s ease;
+}
+
+img {
+  display: inline-block;
+  align-items: center;
+  width: 60px;
+  margin-bottom: 15px;
+  border-radius: 20%;
+}
+a.active,
+a:hover {
+  border-left: 5px solid var(--highlight-color);
+  color: var(--highlight-color);
+}
+.sidebar a i {
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check {
+  display: none;
+}
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background: #262626;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all 0.5s ease;
+}
+label #cancel {
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel {
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebarPhoto {
+  width: 80px;
+}
+
+.name {
+  font-size: 25px;
+}
+
+.title-bar {
+  font-size: 18px;
+}
+
+.title {
+  font-size: 55px;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.name-title {
+  font-size: 65px;
+}
+
+.redColor {
+  color: var(--highlight-color);
+}
+
+.frontPageInfo {
+  text-align: center;
+  font-size: 22px;
+}
+
+.text-center {
+  margin-top: 20px;
+}
+
+.text-center a:hover {
+  border-left: none;
+}
+
+.btn-danger:hover {
+  border: none;
+}
+
+.btn-danger {
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: var(--highlight-color);
+  padding: 12px 18px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.otherTitle {
+  font-size: 75px;
+  text-align: center;
+}
+
+.pageInfo {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.smallTitle {
+  font-size: 50px;
+  color: var(--highlight-color);
+}
+
+.aboutSection {
+  background-color: rgba(241, 95, 95, 0.075);
+  border: 2px solid rgba(241, 95, 95, 0.301);
+
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.projectSection {
+  padding: 10px 20px;
+  border: 2px solid rgba(241, 95, 95, 0.301);
+  border-radius: 20px;
+  margin: 20px 0;
+  background-color: var(--background-color);
+}
+
+.smallInfo {
+  font-size: 24px;
+}
+
+.image {
+  width: 250px;
+}
+
+.image2 {
+  width: 230px;
+  margin-top: 90px;
+}
+
+.projectImage {
+  width: 90%;
+  margin: auto;
+  display: block;
+  background-color: white;
+}
+
+.projectSection .projectImage {
+  position: relative;
+  margin-top: 25px;
+}
+
+.projectExp {
+  font-size: 25px;
+}
+
+.smallExTitle {
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+
+.smallPTitle {
+  font-size: 40px;
+  color: var(--highlight-color);
+}
+
+.edImage {
+  width: 80px;
+  margin: auto;
+  display: block;
+}
+
+.edImage2 {
+  width: 95px;
+  margin: auto;
+  display: block;
+}
+
+.edImage3,
+.edImage4 {
+  width: 175px;
+  margin: auto;
+  display: block;
+  padding-top: 15px;
+}
+
+.edBubble {
+  border: 1px solid var(--highlight-color);
+  border-radius: 10px;
+  padding: 5px 0;
+  max-width: 90%;
+}
+
+.edBubble2 {
+  padding: 15px 0;
+  margin-left: 20px;
+}
+
+.edBubble3 {
+  padding: 15px 0;
+  margin-left: 50px;
+}
+
+.edBubble4 {
+  margin-left: 80px;
+  padding: 15px 0;
+}
+
+.edMiddle1 {
+  margin-top: 8px;
+}
+
+.edInfo {
+  text-align: center;
+  font-size: 20px;
+}
+
+.edInfoTitle {
+  font-size: 29px;
+}
+
+.year {
+  font-size: 39px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 8%;
+}
+
+.foot:hover {
+  border: none;
+}
+
+.footerLinks {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+hr {
+  width: 350px;
+  margin: auto;
+}
+
+.footLink {
+  color: black;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.footLink:hover {
+  color: rgb(68, 68, 177);
+  border-left: none;
+}
+
+.foot {
+  text-align: center;
+  margin: 3% 0;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    height: auto;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    margin-top: -22px;
+  }
+  header,
+  #btn,
+  #cancel {
+    display: none;
+  }
+  .sidebar a .menuItem {
+    position: absolute;
+    font-size: 8px;
+    margin-top: 30px;
+    margin-left: -45px;
+  }
+  .sidebar a {
+    height: 80px;
+  }
+
+  .sidebar a i {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  a.active,
+  a:hover {
+    border: none;
+    color: var(--highlight-color);
+  }
+
+  .title {
+    font-size: 35px;
+    margin-top: 40%;
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+  .name-title {
+    font-size: 35px;
+  }
+
+  .frontPageInfo {
+    margin: 0 40px;
+    font-size: 17px;
+  }
+
+  .btn-danger {
+    font-size: 16px;
+  }
+
+  .otherTitle {
+    margin-top: 80px;
+    font-size: 54px;
+  }
+
+  .pageInfo {
+    font-size: 18px;
+    margin: 0 10px 12px 10px;
+  }
+
+  .image,
+  .image2 {
+    visibility: hidden;
+  }
+
+  .smallTitle {
+    font-size: 34px;
+  }
+
+  .smallInfo {
+    font-size: 17px;
+  }
+
+  .edBubble,
+  .edBubble2,
+  .edBubble3,
+  .edBubble4 {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  .smallPTitle {
+    font-size: 32px;
+    color: var(--highlight-color);
+  }
+
+  .smallPExTitle {
+    font-size: 17px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+
+  .projBtn {
+    margin-bottom: 8px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    max-width: 180px;
+  }
+
+  .projectSection {
+    padding: 5px 4px;
+  }
+
+  .projectExp {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+
+  .projectImage {
+    z-index: -1;
+  }
+
+  .footLink {
+    color: black;
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  .foot {
+    text-align: center;
+    margin: 3% 0;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The contact page of the portfolio of Courtney Yatteau, Front-End Developer."
+    />
+    <meta
+      name="Keywords"
+      content="Courtney Yatteau Front-End Developer Alexandria Virginia"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ae81c1475a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact Courtney Yatteau</title>
+  </head>
+  <body class="homeBody">
+    <div>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <div class="sidebar">
+        <header>
+          <div class="name">
+            <div>
+              <img
+                src="/images/PhotoOfMe.jpg"
+                class="sidebarPhoto"
+                alt="Courtney Yatteau Photo"
+              />
+            </div>
+            Courtney Yatteau
+          </div>
+          <div class="title-bar">Front-End Developer</div>
+        </header>
+        <a href="/">
+          <i class="fas fa-home"></i>
+          <span class="menuItem">Homepage</span>
+        </a>
+        <a href="/about.html">
+          <i class="far fa-question-circle"></i>
+          <span class="menuItem">About</span>
+        </a>
+        <a href="/projects.html">
+          <i class="fas fa-table"></i>
+          <span class="menuItem">Projects</span>
+        </a>
+        <a href="/contact.html" class="active">
+          <i class="fas fa-envelope"></i>
+          <span class="menuItem">Contact</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container main">
+      <div class="otherTitle">Contact Me</div>
+      <div class="pageInfo">
+        Interested in working together or chatting about web development?
+        <br />
+        Please fill-out the form below and I will be in touch shortly.
+      </div>
+    </div>
+
+    <div class="container formContainer">
+      <form
+        action="https://getform.io/f/666308d5-36a6-49d3-a6b0-94aa02ebc7b6"
+        method="POST"
+        enctype="multipart/form-data"
+        target="_blank"
+        id="wpform"
+      >
+        <div>
+          <label for="name" class="form-label h4">Full Name</label>
+          <div>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="first_name"
+              placeholder="Enter your first and last name"
+              required="required"
+            />
+          </div>
+        </div>
+        <br />
+        <div>
+          <label for="email" class="form-label h4">Email address</label>
+          <div>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required="required"
+            />
+          </div>
+        </div>
+        <br />
+        <div>
+          <label for="message" class="form-label h4">Your Message</label>
+          <div>
+            <textarea
+              type="text"
+              class="form-control"
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              required="required"
+            ></textarea>
+          </div>
+        </div>
+        <div class="upload mt-4">
+          <label for="document" class="form-label h4"
+            >Upload document <span class="opt">(optional)</span>
+          </label>
+          <input type="file" class="form-control" id="document" name="file" />
+        </div>
+        <button type="submit" class="btn btn-danger">SUBMIT</button>
+      </form>
+    </div>
+
+    <footer class="container">
+      <hr />
+      <div class="footerLinks">
+        <a
+          class="footLink"
+          title="Courtney's LinkedIn"
+          href="https://www.linkedin.com/in/courtneyyatteau/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          class="footLink"
+          title="Courtney's Instagram"
+          href="https://www.instagram.com/cyatteau/"
+          target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+        <a
+          class="footLink"
+          title="Courtney's Facebook"
+          href="https://www.facebook.com/courtney.yatteau/"
+          target="_blank"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a
+          class="footLink"
+          title="Courtney's Github"
+          href="https://github.com/courtneyyatteau"
+          target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a
+          class="footLink"
+          title="courtney.yatteau@gmail.com"
+          href="mailto:courtney.yatteau@gmail.com"
+          target="_blank"
+          ><i class="fas fa-envelope-square"></i>
+        </a>
+      </div>
+    </footer>
+    <div class="foot">
+      This is an
+      <a
+        href="https://github.com/courtneyyatteau/Portfolio-Project"
+        title="GitHub Code"
+        target="_blank"
+        class="foot"
+        >open-sourced</a
+      >
+      project by Courtney Yatteau.
+    </div>
+  </body>
+</html>

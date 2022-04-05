@@ -126,6 +126,10 @@ label #cancel {
   font-size: 65px;
 }
 
+.description-title {
+  font-size: 50px;
+}
+
 .redColor {
   color: var(--highlight-color);
 }

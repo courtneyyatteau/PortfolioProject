@@ -18,12 +18,22 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="icon" href="/images/computerFavicon.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
@@ -76,22 +86,24 @@
     </div>
 
     <div class="container main">
-      <div class="otherTitle">About Me</div>
-      <div class="pageInfo">
+      <div class="animate__animated animate__fadeInDown otherTitle animate__slower">
+        About Me
+      </div>
+      <div class="pageInfo animate__animated animate__zoomIn animate__slower">
         All about who I am, what I love to do, my work experience and my
         educational background.
       </div>
 
       <div class="aboutSection">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <img
               src="/images/Profile Photo.jpg"
               alt="Courtney"
               class="image img-fluid d-none d-md-block"
             />
           </div>
-          <div class="col-md-9 smallInfo">
+          <div class="col-md-10 smallInfo">
             <div class="smallTitle">Who I am</div>
             My name is Courtney. I live in Alexandria, VA. My hobbies consist of
             running, cross-stitching, programming, tutoring, and watching
@@ -115,80 +127,80 @@
           </div>
         </div>
       </div>
-      <div class="smallTitle mt-5">Education</div>
-      <div class="container">
-        <div class="row mt-3 edBubble">
-          <div class="col-sm-3">
-            <img
-              src="/images/ETSUSeal.png"
-              alt="ETSU Image"
-              class="edImage img-fluid"
-            />
-          </div>
-          <div class="col-sm-6 edMiddle1">
-            <div class="edInfo edInfoTitle">
-              East Tennessee State University
+      <div class="reveal">
+        <div class="smallTitle mt-5">Education</div>
+        <div class="container">
+          <div class="row mt-3 edBubble">
+            <div class="col-sm-3">
+              <img
+                src="/images/ETSUSeal.png"
+                alt="ETSU Image"
+                class="edImage img-fluid"
+              />
             </div>
-            <div class="edInfo">
-              Bachelor of Science Degree (B.S.) in Mathematics
+            <div class="col-sm-6 edMiddle1">
+              <div class="edInfo edInfoTitle">
+                East Tennessee State University
+              </div>
+              <div class="edInfo">
+                Bachelor of Science Degree (B.S.) in Mathematics
+              </div>
             </div>
+            <div class="col-sm-3 year">2012</div>
           </div>
-          <div class="col-sm-3 year">2012</div>
         </div>
-      </div>
 
-      <div class="container">
-        <div class="row mt-3 edBubble edBubble2">
-          <div class="col-sm-3">
-            <img
-              src="/images/RadfordSeal.png"
-              alt="Radford Image"
-              class="edImage2 img-fluid"
-            />
-          </div>
-          <div class="col-sm-6 edMiddle2">
-            <div class="edInfo edInfoTitle">Radford University</div>
-            <div class="edInfo">
-              Master of Science Degree (M.S.) in Mathematics Education
+        <div class="container">
+          <div class="row mt-3 edBubble edBubble2">
+            <div class="col-sm-3">
+              <img
+                src="/images/RadfordSeal.png"
+                alt="Radford Image"
+                class="edImage2 img-fluid"
+              />
             </div>
-          </div>
-          <div class="col-sm-3 year">2018</div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row mt-3 edBubble edBubble3">
-          <div class="col-sm-3">
-            <img
-              src="/images/NuCampImage.svg"
-              alt="Nucamp Logo"
-              class="edImage3 img-fluid"
-            />
-          </div>
-          <div class="col-sm-6 edMiddle3">
-            <div class="edInfo edInfoTitle">NuCamp Coding Bootcamp</div>
-            <div class="edInfo">Full-Stack Web Development Certificate</div>
-          </div>
-          <div class="col-sm-3 year">2020</div>
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="row mt-3 edBubble edBubble4">
-          <div class="col-sm-3">
-            <img
-              src="/images/SheCodesImage.png"
-              alt="SheCodes Logo"
-              class="edImage4 img-fluid"
-            />
-          </div>
-          <div class="col-sm-6 edMiddle4">
-            <div class="edInfo edInfoTitle">SheCodes Workshop</div>
-            <div class="edInfo">
-              Front-End Development Certificate In-Progress
+            <div class="col-sm-6 edMiddle2">
+              <div class="edInfo edInfoTitle">Radford University</div>
+              <div class="edInfo">
+                Master of Science Degree (M.S.) in Mathematics Education
+              </div>
             </div>
+            <div class="col-sm-3 year">2018</div>
           </div>
-          <div class="col-sm-3 year">2022</div>
+        </div>
+
+        <div class="container">
+          <div class="row mt-3 edBubble edBubble3">
+            <div class="col-sm-3">
+              <img
+                src="/images/NuCampImage.svg"
+                alt="Nucamp Logo"
+                class="edImage3 img-fluid"
+              />
+            </div>
+            <div class="col-sm-6 edMiddle3">
+              <div class="edInfo edInfoTitle">NuCamp Coding Bootcamp</div>
+              <div class="edInfo">Full-Stack Web Development Certificate</div>
+            </div>
+            <div class="col-sm-3 year">2020</div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row mt-3 edBubble edBubble4">
+            <div class="col-sm-3">
+              <img
+                src="/images/SheCodesImage.png"
+                alt="SheCodes Logo"
+                class="edImage4 img-fluid"
+              />
+            </div>
+            <div class="col-sm-6 edMiddle4">
+              <div class="edInfo edInfoTitle">SheCodes Workshop</div>
+              <div class="edInfo">Responsive Web Development Certificate</div>
+            </div>
+            <div class="col-sm-3 year">2022</div>
+          </div>
         </div>
       </div>
     </div>
@@ -244,5 +256,6 @@
       >
       project by Courtney Yatteau.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

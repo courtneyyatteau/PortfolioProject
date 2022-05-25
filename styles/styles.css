@@ -10,8 +10,39 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+body {
+  background: linear-gradient(
+    0.25turn,
+    #e8f2f7,
+    #f0fae9,
+    var(--background-color)
+  );
+}
+
 .homeBody {
   background-color: var(--background-color);
+}
+
+.my-logo {
+  float: right;
+  width: 12%;
+  margin: 30px;
+}
+
+@keyframes test {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.test {
+  animation: test 4s infinite;
 }
 
 .sidebar {
@@ -206,7 +237,7 @@ label #cancel {
   background-color: rgba(241, 95, 95, 0.075);
   border: 2px solid rgba(241, 95, 95, 0.301);
   border-radius: 20px;
-  padding: 30px;
+  padding: 25px;
   width: 100%;
 }
 
@@ -219,7 +250,24 @@ label #cancel {
 }
 
 .smallInfo {
-  font-size: 24px;
+  font-size: 25px;
+}
+
+.myTable {
+  margin-top: 20px;
+}
+
+.theTable {
+  border-color: rgba(241, 95, 95, 0.301);
+  border-radius: 20px;
+}
+
+th {
+  font-size: 26px;
+}
+
+td {
+  font-size: 20px;
 }
 
 .image {
@@ -227,8 +275,9 @@ label #cancel {
 }
 
 .image2 {
-  width: 230px;
-  margin-top: 90px;
+  width: 200px;
+  margin-top: 70px;
+  margin-right: 300px;
 }
 
 .projectImage {
@@ -381,6 +430,10 @@ hr {
   .sidebar a i {
     text-align: center;
     font-size: 22px;
+  }
+
+  .my-logo {
+    display: none;
   }
 
   a.active,

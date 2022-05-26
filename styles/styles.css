@@ -394,7 +394,7 @@ hr {
 }
 
 .footLink:hover {
-  color: rgb(68, 68, 177);
+  color: var(--highlight-color);
   border-left: none;
 }
 

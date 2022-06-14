@@ -327,6 +327,13 @@ td {
   padding-top: 15px;
 }
 
+.edImage5 {
+  width: 195px;
+  margin: auto;
+  display: block;
+  padding: 24px 0 15px;
+}
+
 .edBubble {
   border: 1px solid var(--highlight-color);
   border-radius: 10px;
@@ -349,6 +356,11 @@ td {
   padding: 15px 0;
 }
 
+.edBubble5 {
+  margin-left: 110px;
+  padding: 15px 0;
+}
+
 .edMiddle1 {
   margin-top: 8px;
 }
@@ -357,6 +369,7 @@ td {
   text-align: center;
   font-size: 20px;
 }
+
 
 .edInfoTitle {
   font-size: 29px;
